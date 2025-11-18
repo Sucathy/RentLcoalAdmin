@@ -1,0 +1,95 @@
+.pgdetails-admin {
+    padding: 20px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.property-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.property-card {
+    cursor: pointer;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+/* .property-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+} */
+
+.property-card.active-card {
+    border: 2px solid #000000;
+    box-shadow: 0 4px 15px rgba(116, 116, 116, 0.3);
+}
+
+.property-card-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pg-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pg-table th,
+.pg-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.pg-table th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+.edit-btn,
+.delete-btn,
+.add-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #000000;
+    color: white;
+    margin-right: 8px;
+}
+
+.delete-btn {
+    background-color: #000000;
+    color: white;
+}
+
+.add-btn {
+    background-color: #000000;
+    color: white;
+}

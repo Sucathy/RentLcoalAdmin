@@ -1,0 +1,192 @@
+.host-manage {
+    padding: 20px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+}
+
+.dashboard-card h3 {
+    font-size: 15px;
+    color: #555;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Status colors for dashboard cards */
+.dashboard-card.total {
+    background: #cce5ff;
+}
+
+.dashboard-card.pending {
+    background: #fff3cd;
+}
+
+.dashboard-card.listed {
+    background: #d4edda;
+}
+
+.dashboard-card.wrong {
+    background: #f8d7da;
+}
+
+.dashboard-card.users {
+    background: #000000;
+}
+
+/* Host Table */
+.host-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(15, 15, 15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.host-table th,
+.host-table td {
+    border: 1px solid #d7d7d7;
+    padding: 10px;
+    text-align: center;
+}
+
+.host-table th {
+    background: #000000;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Icons */
+.icon-btn {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+
+.icon-btn.edit {
+    color: #000000;
+}
+
+.icon-btn.delete {
+    color: #000000;
+}
+
+.icon-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Status Buttons */
+.status-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.status-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+    color: #555;
+    background: #f1f1f1;
+}
+
+.status-btn.active {
+    color: white;
+    font-weight: bold;
+}
+
+/* Active button colors */
+.status-btn.active.pending {
+    background: #ffc107;
+    border-color: #e0a800;
+}
+
+.status-btn.active.listed {
+    background: #28a745;
+    border-color: #218838;
+}
+
+.status-btn.active.wrong {
+    background: #dc3545;
+    border-color: #c82333;
+}
+
+/* Hover effect for buttons */
+.status-btn:hover {
+    opacity: 0.8;
+}
+
+/* Optional: row highlight based on status */
+.host-row.pending {
+    background: #fff8e1;
+}
+
+.host-row.listed {
+    background: #e6ffed;
+}
+
+.host-row.wrong {
+    background: #ffe6e6;
+}
+
+
+.host-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Users row styling */
+.user-row {
+    background-color: #ffffff;
+    /* light blue, similar to other status rows */
+    color: #000;
+    /* black text */
+}
+
+.user-row:hover {
+    background-color: #ffffff;
+    /* slightly darker on hover */
+}
+
+
+.search-container {
+    margin: 15px 0;
+
+}
+
+.search-input {
+    padding: 9px 12px;
+    width: 600px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}

@@ -1,0 +1,78 @@
+.hero-admin {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.hero-admin h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-row button {
+    padding: 8px 16px;
+    background-color: #2c7a7b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.hero-table th,
+.hero-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.hero-table th {
+    background-color: #f0f0f0;
+}
+
+.preview-img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background: #facc15;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-wrap {
+    word-break: break-all;
+}
