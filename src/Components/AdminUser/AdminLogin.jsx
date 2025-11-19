@@ -11,7 +11,7 @@ const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/adminAuth/adminlogin", {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE}/api/adminAuth/adminlogin`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

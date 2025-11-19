@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PgDetails.css";
 
-const API = "http://localhost:5000/api/pgdetails";
+const API = `${process.env.REACT_APP_API_BASE}/api/pgdetails`,
 
 // Property Type Cards
 const propertyTypes = [

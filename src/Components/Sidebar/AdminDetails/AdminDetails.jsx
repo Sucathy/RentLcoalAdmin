@@ -17,7 +17,7 @@ const AdminDetails = () => {
 
   const fetchAdmins = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/alladmins");
+      const res = await fetch(`${process.env.REACT_APP_API_BASE}/api/alladmins`);
       const data = await res.json();
       setAdmins(data);
     } catch (err) {
@@ -29,7 +29,7 @@ const AdminDetails = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this admin?")) return;
     try {
-      await fetch(`http://localhost:5000/api/alladmins/${id}`, {
+      await fetch(`${process.env.REACT_APP_API_BASE}/api/alladmins/${id}`, {
         method: "DELETE",
       });
       setAdmins(admins.filter((admin) => admin._id !== id));
@@ -55,7 +55,7 @@ const AdminDetails = () => {
   // Submit edit form
   const handleSave = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/alladmins/${editingAdmin}`, {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE}/api/alladmins/${editingAdmin}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AddPg.css";
 
-const API = "http://localhost:5000/api/pgdetails";
+const API = `${process.env.REACT_APP_API_BASE}/api/pgdetails`,
 
 // Amenity list (must match backend format)
 const amenitiesList = [
@@ -287,7 +287,7 @@ const AddPg = () => {
                                             ? img
                                             : URL.createObjectURL(img)
                                     }
-                                    alt={`img-${index}`}
+                                    alt={`img-${ index } `}
                                     className="preview-img"
                                 />
                                 <button

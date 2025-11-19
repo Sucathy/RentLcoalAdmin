@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./AddPg.css";
 
-const API = "http://localhost:5000/api/pgdetails";
+const API = `${process.env.REACT_APP_API_BASE}/api/pgdetails`,
 
 const amenitiesList = [
     { name: "AC", type: "AirVent", icon: <AirVent size={18} /> },
