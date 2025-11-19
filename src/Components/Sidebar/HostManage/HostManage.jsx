@@ -221,7 +221,7 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./HostManage.css";
 
-const BACKEND_URL = `${process.env.REACT_APP_API_BASE}`,;
+const BACKEND_URL = (`${process.env.REACT_APP_API_BASE}`)
 const API = `${ BACKEND_URL }/api/host`;
 
 const HostManage = () => {

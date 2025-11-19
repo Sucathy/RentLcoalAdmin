@@ -20,7 +20,7 @@ const Profile = () => {
       }
 
       try {
-        const res = await fetch(`${process.env.REACT_APP_API_BASE}/api/adminAuth/me", {
+        const res = await fetch(`${process.env.REACT_APP_API_BASE}/api/adminAuth/me`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

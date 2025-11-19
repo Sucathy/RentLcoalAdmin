@@ -648,7 +648,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./HostManageEdit.css";
 
-const BACKEND_URL = `${process.env.REACT_APP_API_BASE}`,
+const BACKEND_URL = (`${process.env.REACT_APP_API_BASE}`),
 const API = `${ BACKEND_URL }/api/host`;
 
 const HostManageEdit = () => {

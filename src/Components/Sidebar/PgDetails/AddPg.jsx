@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AddPg.css";
 
-const API = `${process.env.REACT_APP_API_BASE}/api/pgdetails`,
+const API = (`${process.env.REACT_APP_API_BASE}/api/pgdetails`),
 
 // Amenity list (must match backend format)
 const amenitiesList = [
