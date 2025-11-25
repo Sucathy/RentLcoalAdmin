@@ -54,6 +54,7 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
+    font-size: 13px;
 }
 
 .pg-table th,

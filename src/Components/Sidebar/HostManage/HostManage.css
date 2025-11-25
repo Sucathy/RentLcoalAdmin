@@ -65,12 +65,13 @@
     background: rgb(15, 15, 15);
     border-radius: 10px;
     overflow: hidden;
+    font-size: 13px;
 }
 
 .host-table th,
 .host-table td {
     border: 1px solid #d7d7d7;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .status-btn {
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     border: 1px solid transparent;
     cursor: pointer;
@@ -160,6 +161,7 @@
 
 .host-img {
     width: 50px;
+    padding: 5px;
     height: 50px;
     object-fit: cover;
     border-radius: 4px;

@@ -36,6 +36,7 @@
     width: 100%;
     border-collapse: collapse;
     background: white;
+    font-size: 13px;
 }
 
 .hero-table th,
